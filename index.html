@@ -13,13 +13,18 @@
     <header class="main-header">
         <div class="container nav-container">
             <a href="#" class="logo" id="home-link"><i class="fas fa-utensils"></i> GastroChef</a>
+            
+            <button class="mobile-menu-btn" aria-label="Open Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
             <nav class="main-nav">
-                <ul>
+                <ul id="nav-list">
                     <li><a href="#" id="nav-home">Home</a></li>
                     <li><a href="#" id="nav-favorites"><i class="fas fa-heart"></i> Favorites (<span id="fav-count">0</span>)</a></li>
                     <li>
                         <button id="theme-toggle" aria-label="Toggle Dark Mode">
-                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-moon"></i> Theme
                         </button>
                     </li>
                 </ul>
@@ -35,7 +40,7 @@
             <div class="search-wrapper">
                 <select id="category-select">
                     <option value="">Select Category...</option>
-                    </select>
+                </select>
 
                 <input type="text" id="search-input" placeholder="Search recipe (e.g. Pasta)...">
                 <button id="search-btn" class="btn btn-primary"><i class="fas fa-search"></i> Search</button>
