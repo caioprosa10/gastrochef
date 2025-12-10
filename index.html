@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GastroChef - Final Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="#" class="logo" id="home-link"><i class="fas fa-utensils"></i> GastroChef</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" id="nav-home">Home</a></li>
+                    <li><a href="#" id="nav-favorites"><i class="fas fa-heart"></i> Favorites (<span id="fav-count">0</span>)</a></li>
+                    <li>
+                        <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container hero-content">
+            <h1>Fine Dining at Home</h1>
+            <p>Master the culinary arts with our chef-curated recipes.</p>
+            
+            <div class="search-wrapper">
+                <select id="category-select">
+                    <option value="">Select Category...</option>
+                    </select>
+
+                <input type="text" id="search-input" placeholder="Search recipe (e.g. Pasta)...">
+                <button id="search-btn" class="btn btn-primary"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="container" style="padding: 40px 0;">
+        <h2 id="section-title">Chef's Selections</h2>
+        
+        <div id="loader" class="hidden">
+            <div class="spinner"></div>
+        </div>
+
+        <div id="recipe-grid" class="menu-grid">
+            </div>
+    </main>
+
+    <div id="recipe-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body">
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container text-center">
+            <p>© 2025 GastroChef. Project for Web Frontend Development.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
